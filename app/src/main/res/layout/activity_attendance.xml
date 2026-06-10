@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance System"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnP1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arun - Present"/>
+
+    <Button
+        android:id="@+id/btnA1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arun - Absent"/>
+
+    <Button
+        android:id="@+id/btnP2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Priya - Present"/>
+
+    <Button
+        android:id="@+id/btnA2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Priya - Absent"/>
+
+    <Button
+        android:id="@+id/btnP3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rahul - Present"/>
+
+    <Button
+        android:id="@+id/btnA3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rahul - Absent"/>
+
+</LinearLayout>
