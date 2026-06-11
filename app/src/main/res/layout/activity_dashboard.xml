@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="🏫 School Management System"
+        android:text="🏫 To-Do App"
         android:textSize="26sp"
         android:textStyle="bold"
         android:layout_marginBottom="30dp"/>
@@ -18,21 +18,21 @@
         android:id="@+id/btnStudents"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="📚 Students"
+        android:text="📚 Tasks"
         android:layout_marginBottom="10dp"/>
 
     <Button
         android:id="@+id/btnTeachers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="👨‍🏫 Teachers"
+        android:text="👨‍🏫 Events"
         android:layout_marginBottom="10dp"/>
 
     <Button
         android:id="@+id/btnAttendance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="📝 Attendance"
+        android:text="📝 Notes"
         android:layout_marginBottom="20dp"/>
 
     <Button

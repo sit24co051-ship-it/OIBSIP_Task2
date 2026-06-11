@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class LoginActivity extends AppCompatActivity {
 
     EditText emailInput, passwordInput;
-    Button loginButton;
+    Button loginButton, btnSignup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class LoginActivity extends AppCompatActivity {
         emailInput = findViewById(R.id.emailInput);
         passwordInput = findViewById(R.id.passwordInput);
         loginButton = findViewById(R.id.loginButton);
+        btnSignup = findViewById(R.id.btnSignup);
 
         loginButton.setOnClickListener(v -> {
 
@@ -28,11 +29,30 @@ public class LoginActivity extends AppCompatActivity {
             String password = passwordInput.getText().toString();
 
             if (email.equals("admin") && password.equals("1234")) {
+
                 Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
                 startActivity(intent);
+
             } else {
-                Toast.makeText(this, "Invalid login!", Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(
+                        LoginActivity.this,
+                        "Invalid Login!",
+                        Toast.LENGTH_SHORT
+                ).show();
+
             }
+        });
+
+        btnSignup.setOnClickListener(v -> {
+
+            Intent intent = new Intent(
+                    LoginActivity.this,
+                    SignupActivity.class
+            );
+
+            startActivity(intent);
+
         });
     }
 }

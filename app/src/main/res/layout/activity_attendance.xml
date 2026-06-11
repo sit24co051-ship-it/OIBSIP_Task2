@@ -8,44 +8,31 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Attendance System"
+        android:text="📌 Important Notes"
         android:textSize="24sp"
-        android:layout_marginBottom="20dp"/>
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/noteInput"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Write your notes here"
+        android:gravity="top"
+        android:layout_marginTop="15dp"/>
 
     <Button
-        android:id="@+id/btnP1"
+        android:id="@+id/btnSaveNote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Arun - Present"/>
+        android:text="Save Note"
+        android:layout_marginTop="10dp"/>
 
-    <Button
-        android:id="@+id/btnA1"
+    <TextView
+        android:id="@+id/noteDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Arun - Absent"/>
-
-    <Button
-        android:id="@+id/btnP2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Priya - Present"/>
-
-    <Button
-        android:id="@+id/btnA2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Priya - Absent"/>
-
-    <Button
-        android:id="@+id/btnP3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Rahul - Present"/>
-
-    <Button
-        android:id="@+id/btnA3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Rahul - Absent"/>
+        android:text="No notes yet"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>
